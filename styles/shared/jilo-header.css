@@ -96,6 +96,18 @@
   margin-top: 3px;
 }
 
+.sign-in {
+  color: rgb(1, 247, 42);
+  display: block;
+  font-size: 13px;
+  margin: 5px;
+  background-color: green;
+  cursor: border;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
 .jilo-header-right-section {
   width: 180px;
   flex-shrink: 0;
