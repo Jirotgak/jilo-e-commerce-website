@@ -110,10 +110,13 @@ export function loadProductsFecth() {
     });
 
     console.log('load products');
+  }).catch((error) => {
+    console.error('unexpected error, please try again later');
   });
 
   return promise;
 }
+
 
 /*
 loadProductsFecth().then(() => {
@@ -135,6 +138,9 @@ export function loadProducts(fun) {
     console.log('load products');
 
     fun();
+  });
+  xhr.addEventListener('error', (error) => {
+    console.error('unexpected error, please try again later');
   });
 
   xhr.open('GET', 'https://supersimplebackend.dev/products');
